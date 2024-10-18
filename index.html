@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen DWEC...</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/images/cereza.png" type="image/x-icon">
+
+    <!-- Fuente Hubballi -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
+
+    <!-- Estilos CSS -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <div class="container">
+        <section class="main">
+            <header class="header">
+                <h1 class="header__title">Recreativos Ribera</h1>
+            </header>
+
+            <!-- Mostramos las frutas durante el juego -->
+            <section class="visor">
+                <img src="./assets/images/cereza.png" id="visorfruta1" class="visor__fruta">
+
+                <img src="./assets/images/cereza.png" id="visorfruta2" class="visor__fruta">
+
+                <img src="./assets/images/cereza.png" id="visorfruta3" class="visor__fruta">
+            </section>
+
+            <section class="container-apuestas">
+                <div class="caja__saldo">
+                    <label class="container-apuestas__label">Saldo</label>
+                    <input class="container-apuestas__input" type="text" readonly id="saldo" value="100">
+                </div>
+
+                <div class="caja__apuesta">
+                    <label class="container-apuestas__label">Apuesta</label>
+                    <input class="container-apuestas__input" type="number" id="apuesta" value="10" min="10">
+                </div>
+            </section>
+            <p class="caja__alert" id="cajaalerta">La apuesta debe ser mayor o igual a 10</p>
+            <!-- Botón para jugar -->
+            <button id="btnjugar" class="btnjugar">Jugar</button>
+        </section>
+
+        <!-- Para mostrar los resultados -->
+        <section class="container-jugadas">
+
+            <section id="jugadas">
+                <!-- Aqui se deben mostrar las jugadas -->
+
+                <!--     <article class="jugada">
+                      <div>
+                        <p class="jugada__text">Resultado: </p>
+                        <span class="jugada__text"> 10</span>
+                    </div>
+                       
+                    <div>
+                        <p class="jugada__text">Saldo: </p>
+                        <span class="jugada__text"> 100</span>
+                    </div>
+
+                    <div>
+                        <img src="./assets/images/cereza.png" class="jugada__img">
+                        <img src="./assets/images/cereza.png" class="jugada__img">
+                        <img src="./assets/images/cereza.png" class="jugada__img">
+                    </div>
+                </article> -->
+            </section>
+        </section>
+    </div>
+    <script src="js/script.js "></script>
+</body>
+
+</html>
